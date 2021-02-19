@@ -1,0 +1,108 @@
+@font-face{
+    font-family: 'robotothin';
+    src: url('../Font/Roboto-Thin-webfont.eot');
+    src: url('../Font/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Font/Roboto-Thin-webfont.woff') format('woff'),
+         url('../Font/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('../Font/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  font-family:'robotothin';
+  background-color: white;
+  user-select: none;
+}
+
+p#mainTitle{
+  font-size: 54px;
+  display: none;
+  margin: 100px auto;
+  text-align: center;
+}
+
+p#secondTitle{
+  width: 500px;
+  font-size: 54px;
+  display: block;
+  margin: 100px auto;
+  text-align: center;
+  word-spacing: 8px;
+}
+
+div#verticalLine{
+    width: 1px;
+    background-color: black;
+    height: 55px;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+  width: 600px;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+li{
+  width: 90%;
+  margin: 70px auto;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  padding: 30px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+
+
+/* Normal effect just the corners of the borders*/
+
+li.linkWithNormalBorder:after, li.linkWithNormalBorder:before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+  }
+
+li.linkWithNormalBorder:after {
+    top: 10px;
+    left: 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+  }
+li.linkWithNormalBorder:before {
+    bottom: 10px;
+    right: 10px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+  }
+
+  /* Effect on start and on hover */
+
+li.linkWithFullBorder, li.linkWithHoverBorder:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+li.linkWithFullBorder:before, li.linkWithFullBorder:after, li.linkWithHoverBorder:hover:before, li.linkWithHoverBorder:hover:after {
+    width: 100%;
+    height: 100%;
+}
+}

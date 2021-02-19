@@ -1,0 +1,11 @@
+.mainPanelBio{
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+#photoBio{
+    width: 10%;
+    border-radius: 50%;
+}
