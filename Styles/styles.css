@@ -16,7 +16,7 @@
 }
 
 p#mainTitle{
-  font-size: 54px;
+  font-size: 4em;
   display: none;
   margin: 100px auto;
   text-align: center;
@@ -41,7 +41,7 @@ div#verticalLine{
 }
 
 ul{
-  width: 600px;
+  width: 100%;
   font-size: 32px;
   margin: 0 auto;
   text-align: center;
@@ -55,9 +55,9 @@ a{
 }
 
 li{
-  width: 90%;
+  width: 700px;
   margin: 70px auto;
-  display: inline-block;
+  display: block;
   text-align: center;
   letter-spacing: 2px;
   cursor: pointer;

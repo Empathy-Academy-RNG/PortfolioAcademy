@@ -2,7 +2,7 @@ a#goBackLink{
   display: block;
   margin: 80px auto;
   text-align: center;
-  width: 400px;
+  width: 300px;
   padding:50px;
 }
 
@@ -56,9 +56,9 @@ img.linkImage{
 }
 
 li{
-  width: 80%;
+  width: 700px;
   margin: 40px auto;
-  display: inline-block;
+  display: block;
   text-align: center;
   letter-spacing: 2px;
   cursor: pointer;
@@ -69,4 +69,21 @@ li{
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   transition: all 1s;
+}
+
+li#githubPanel:hover{
+  background-color: #a29bfe;
+}
+
+
+li#linkedinPanel:hover{
+  background-color: #2980b9;
+}
+
+li#mailPanel:hover{
+  background-color: #55efc4;
+}
+
+li#twitterPanel:hover{
+  background-color: #74b9ff;
 }

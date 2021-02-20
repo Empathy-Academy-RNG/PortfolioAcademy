@@ -25,16 +25,20 @@
     <link rel="stylesheet" href="Styles/stylesBio.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <a class="hoverForReturn " id="goBackLink" href="index.html"><img id="goBackImage" class="goBackImageNotHovered" src="Images/arrow.png" alt="" /><span class="returnTextNotHover" id="goBackText">Return</span></a>
-    <div class="mainPanelBio">
-      <img id="photoBio" src="Images/photoBio.jpg" alt="Portrait photo">
-      <h3>About me</h3>
-      <p>I'm Raúl Núñez García, a computer engineer student from the Universidad de Oviedo. My interests range
-      from web technologies to AI and its applications, and you can find some of my projects <a href="https://www.github.com/raulng9">here.</a></p>
+    <a class="hoverForReturn " id="goBackLink" href="index.html">
+      <img id="goBackImage" class="goBackImageNotHovered" src="Images/arrow.png" alt="" /><span class="returnTextNotHover" id="goBackText">Return</span></a>
+      <div id="photoContainer">
+        <img id="photoBio" class="staticPhoto desaturatePhoto" src="Images/photoBio.jpg" alt="Portrait photo">
+      </div>
+    <div class="mainPanelBio" id="bioText">
+    <h3>About me</h3>
+      <p>I'm Raúl Núñez García, a computer engineer student from the University of Oviedo. My interests range
+      from web technologies to AI and its applications, and you can find some of my projects <a id="proyectsLink" href="https://www.github.com/raulng9">here.</a></p>
       <p>In my free time I like to practice sports, shoot photos and read. In case it serves anyone, here are some of my online profiles about
       those hobbies,</p>
     </div>
     <script src="Scripts/jquery.js"></script>
     <script type="text/javascript" src="Scripts/contactScript.js"></script>
+    <script type="text/javascript" src="Scripts/bioScript.js"></script>
   </body>
 </html>

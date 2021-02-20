@@ -5,6 +5,7 @@ var alreadyVisited = sessionStorage.getItem("already_visited");
 let verticalLine = "<div id='verticalLine'></div>";
 
 $(document).ready(function() {
+  /*
   if(!alreadyVisited){
     sessionStorage.setItem("already_visited", true);
   }else{
@@ -13,6 +14,7 @@ $(document).ready(function() {
     $("li").addClass("linkWithHoverBorder");
     return;
   }
+  */
   activateBorders();
   let randomModifier = Math.floor(Math.random() * (300 - 200 + 1)) + 200;
   console.log(randomModifier);
@@ -44,7 +46,7 @@ function blinkMarker(){
   $("div#verticalLine").fadeOut(fadeTime);
   $("div#verticalLine").fadeIn(fadeTime);
   $("div#verticalLine").fadeOut(fadeTime);
-  setTimeout(simulateSelection, fadeTime*5);
+  setTimeout(simulateSelection, fadeTime*4);
 }
 
 function simulateSelection(){

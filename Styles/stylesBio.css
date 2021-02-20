@@ -1,11 +1,59 @@
 .mainPanelBio{
     display: block;
-    margin: 0 auto;
-    width: 60%;
+    margin: 70px auto;
+    width: 700px;
     text-align: center;
+    font-size:1.25em;
+    line-height: 1.75em;
+}
+
+div#bioVerticalLine{
+    width: 1px;
+    background-color: black;
+    height: 15px;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 #photoBio{
-    width: 10%;
+    width: 100%;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
+
+.rotatingPhoto{
+    animation: rotation 2s infinite linear;
+}
+
+.staticPhoto{
+    animation: none;
+}
+
+
+#photoContainer{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 3px 15px 18px #888888;
+    margin: 0 auto;
+    display: block;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.desaturatePhoto {
+    -webkit-filter: grayscale(100%);
+    transition: filter 1.3s ease-in-out;
+}
+.saturatePhoto{
+     -webkit-filter: grayscale(0%);
+ }
+
