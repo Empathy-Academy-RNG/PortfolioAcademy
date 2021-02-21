@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Bio</title>
     <link rel="apple-touch-icon" sizes="57x57" href="Favicons/apple-icon-57x57.png">
@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="Favicons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="Favicons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="Favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Favicons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="Favicons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
@@ -23,22 +23,31 @@
     <link rel="stylesheet" href="Styles/styles.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="Styles/stylesContact.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="Styles/stylesBio.css" media="screen" charset="utf-8">
-  </head>
-  <body>
-    <a class="hoverForReturn " id="goBackLink" href="index.html">
-      <img id="goBackImage" class="goBackImageNotHovered" src="Images/arrow.png" alt="" /><span class="returnTextNotHover" id="goBackText">Return</span></a>
-      <div id="photoContainer">
-        <img id="photoBio" class="staticPhoto desaturatePhoto" src="Images/photoBio.jpg" alt="Portrait photo">
-      </div>
-    <div class="mainPanelBio" id="bioText">
-    <h3>About me</h3>
-      <p>I'm Raúl Núñez García, a computer engineer student from the University of Oviedo. My interests range
-      from web technologies to AI and its applications, and you can find some of my projects <a id="proyectsLink" href="https://www.github.com/raulng9">here.</a></p>
-      <p>In my free time I like to practice sports, shoot photos and read. In case it serves anyone, here are some of my online profiles about
-      those hobbies,</p>
+</head>
+<body>
+<a class="hoverForReturn " id="goBackLink" href="index.html">
+    <img id="goBackImage" class="goBackImageNotHovered" src="Images/arrow.png" alt=""/><span class="returnTextNotHover"
+                                                                                             id="goBackText">Return</span></a>
+
+<button class="spin circle">
+    <div id="photoContainer">
+        <img id="photoBio" class="desaturatePhoto" src="Images/photoBio.jpg" alt="Portrait photo">
     </div>
-    <script src="Scripts/jquery.js"></script>
-    <script type="text/javascript" src="Scripts/contactScript.js"></script>
-    <script type="text/javascript" src="Scripts/bioScript.js"></script>
-  </body>
+</button>
+
+
+<div class="mainPanelBio" id="bioText">
+    <h3>About me</h3>
+    <p>I'm Raúl Núñez García, a computer engineer student from the University of Oviedo. My interests range
+        from web technologies to AI and its applications, and you can find some of my projects <a id="proyectsLink"
+                                                                                                  href="https://www.github.com/raulng9">here.</a>
+    </p>
+    <p>In my free time I like to practice sports, shoot photos and read. In case it serves anyone, here are some of my
+        online profiles about
+        those hobbies,</p>
+</div>
+<script src="Scripts/jquery.js"></script>
+<script type="text/javascript" src="Scripts/contactScript.js"></script>
+<script type="text/javascript" src="Scripts/bioScript.js"></script>
+</body>
 </html>
