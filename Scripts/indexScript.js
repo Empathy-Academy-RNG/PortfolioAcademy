@@ -33,11 +33,11 @@ $(document).ready(function() {
 });
 
 function activateBorders(){
-  $("li").addClass("linkWithFullBorder");
-  setTimeout(function(){ $("li").removeClass("linkWithFullBorder"); }, 2000);
+  //Change without borders on init
+  //$("li").addClass("linkWithFullBorder");
+  //setTimeout(function(){ $("li").removeClass("linkWithFullBorder"); }, 2000);
   $("li").addClass("linkWithHoverBorder");
 }
-
 
 function blinkMarker(){
   var fadeTime = 450;
