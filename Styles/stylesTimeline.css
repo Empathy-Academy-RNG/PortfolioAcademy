@@ -51,7 +51,9 @@ span.returnTextHover{
     left: -10px;
 }
 
-
+.fade{
+    opacity: 0;
+}
 
 * {
     box-sizing: border-box;
