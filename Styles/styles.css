@@ -12,8 +12,8 @@
 *{
   font-family:'robotothin';
   user-select: none;
-    z-index: 1;
     background-color: white;
+    background-image: url("../Images/gridBackground.png");
 }
 
 html {
@@ -41,6 +41,7 @@ p#secondTitle{
 }
 
 div#verticalLine{
+    background-image: none;
     width: 2px;
     background-color: black;
     height: 55px;
