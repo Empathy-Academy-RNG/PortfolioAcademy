@@ -5,7 +5,7 @@ var alreadyVisited = sessionStorage.getItem("already_visited");
 let verticalLine = "<div id='verticalLine'></div>";
 
 $(document).ready(function() {
-  /*
+
   if(!alreadyVisited){
     sessionStorage.setItem("already_visited", true);
   }else{
@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("li").addClass("linkWithHoverBorder");
     return;
   }
-  */
+
   activateBorders();
   let randomModifier = Math.floor(Math.random() * (300 - 200 + 1)) + 200;
   console.log(randomModifier);

@@ -98,7 +98,7 @@ p{
 }
 
 .container {
-    padding: 50px 40px;
+    padding: 70px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -157,7 +157,8 @@ p{
 }
 
 .content {
-    padding: 20px 30px;
+    text-align: center;
+    padding: 70px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
