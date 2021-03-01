@@ -1,8 +1,8 @@
 $(window).on("load",function() {
     $(window).scroll(function() {
-        var bottomOfWindow = $(this).scrollTop() + $(this).innerHeight();
+        let bottomOfWindow = $(this).scrollTop() + $(this).innerHeight();
         $(".fade").each(function() {
-            var bottomOfContainer = $(this).offset().top + $(this).outerHeight();
+            let bottomOfContainer = $(this).offset().top + $(this).outerHeight();
             if (bottomOfContainer < bottomOfWindow) {
                 if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
             }
@@ -12,15 +12,17 @@ $(window).on("load",function() {
 
 $(".hoverForReturn").hover(
     function() {
-        $('#goBackImage').addClass("goBackImageHovered");
-        $('#goBackImage').removeClass("goBackImageNotHovered");
-        $('#goBackText').addClass("returnTextHover");
-        $('#goBackText').removeClass("returnTextNotHover");
+        const backImage = $('#goBackImage');
+        backImage.addClass("goBackImageHovered");
+        backImage.removeClass("goBackImageNotHovered");
+        backImage.addClass("returnTextHover");
+        backImage.removeClass("returnTextNotHover");
 
     }, function() {
-        $('#goBackImage').removeClass("goBackImageHovered");
-        $('#goBackImage').addClass("goBackImageNotHovered");
-        $('#goBackText').removeClass("returnTextHover");
-        $('#goBackText').addClass("returnTextNotHover");
+        const backImage = $('#goBackImage');
+        backImage.removeClass("goBackImageHovered");
+        backImage.addClass("goBackImageNotHovered");
+        backImage.removeClass("returnTextHover");
+        backImage.addClass("returnTextNotHover");
     }
 );

@@ -1,14 +1,16 @@
 $(".hoverForReturn").hover(
   function() {
-    $('#goBackImage').addClass("goBackImageHovered");
-    $('#goBackImage').removeClass("goBackImageNotHovered");
-    $('#goBackText').addClass("returnTextHover");
-    $('#goBackText').removeClass("returnTextNotHover");
+      const imageBack = $('#goBackImage');
+      imageBack.addClass("goBackImageHovered");
+      imageBack.removeClass("goBackImageNotHovered");
+      imageBack.addClass("returnTextHover");
+      imageBack.removeClass("returnTextNotHover");
 
   }, function() {
-    $('#goBackImage').removeClass("goBackImageHovered");
-    $('#goBackImage').addClass("goBackImageNotHovered");
-    $('#goBackText').removeClass("returnTextHover");
-    $('#goBackText').addClass("returnTextNotHover");
+        const imageBack = $('#goBackImage');
+        imageBack.removeClass("goBackImageHovered");
+        imageBack.addClass("goBackImageNotHovered");
+        imageBack.removeClass("returnTextHover");
+        imageBack.addClass("returnTextNotHover");
   }
 );

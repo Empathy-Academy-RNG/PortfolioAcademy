@@ -4,8 +4,9 @@ $(document).ready(function() {
 });
 
 function simulateLinking(){
-    $("a#proyectsLink").css("text-decoration", "underline");
-    $("a#proyectsLink").css("color", "#2980b9");
+    const proyects = $("a#proyectsLink");
+    proyects.css("text-decoration", "underline");
+    proyects.css("color", "#2980b9");
 }
 
 function photoAnimation(){
@@ -14,6 +15,7 @@ function photoAnimation(){
 }
 
 function animateImageFade(){
-    $("#photoBio").addClass("photoFadeIn");
-    $("#photoBio").addClass("saturatePhoto");
+    const photography = $("#photoBio");
+    photography.addClass("photoFadeIn");
+    photography.addClass("saturatePhoto");
 }

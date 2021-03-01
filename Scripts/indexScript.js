@@ -1,7 +1,7 @@
 //Simulate typewriter style
-var textToSimulate = $("#mainTitle").text();
-var lettersToSimulate = textToSimulate.split("");
-var alreadyVisited = sessionStorage.getItem("already_visited");
+const textToSimulate = $("#mainTitle").text();
+const lettersToSimulate = textToSimulate.split("");
+const alreadyVisited = sessionStorage.getItem("already_visited");
 let verticalLine = "<div id='verticalLine'></div>";
 
 $(document).ready(function() {
@@ -9,8 +9,9 @@ $(document).ready(function() {
   if(!alreadyVisited){
     sessionStorage.setItem("already_visited", true);
   }else{
-    $("#mainTitle").text("Raúl Núñez García");
-    $("#mainTitle").css("display", "block");
+    const mainTitle =  $("#mainTitle");
+    mainTitle.text("Raúl Núñez García");
+    mainTitle.css("display", "block");
     $("li").addClass("linkWithHoverBorder");
     return;
   }
@@ -20,12 +21,12 @@ $(document).ready(function() {
   console.log(randomModifier);
   lettersToSimulate.forEach(function enterSlowly(element, index, array){
     setTimeout(function(){
-      if(index != 0){
+      if(index !== 0){
         $("#verticalLine").remove();
       }
-      var textToAppend = element + verticalLine;
+      let textToAppend = element + verticalLine;
       $("#secondTitle").append(element + verticalLine);
-      if(index == lettersToSimulate.length -1){
+      if(index === lettersToSimulate.length -1){
         blinkMarker();
       }
     }, randomModifier*index);
@@ -34,18 +35,17 @@ $(document).ready(function() {
 
 function activateBorders(){
   //Change without borders on init
-  //$("li").addClass("linkWithFullBorder");
-  //setTimeout(function(){ $("li").removeClass("linkWithFullBorder"); }, 2000);
   $("li").addClass("linkWithHoverBorder");
 }
 
 function blinkMarker(){
-  var fadeTime = 450;
-  $("div#verticalLine").fadeOut(fadeTime);
-  $("div#verticalLine").fadeIn(fadeTime);
-  $("div#verticalLine").fadeOut(fadeTime);
-  $("div#verticalLine").fadeIn(fadeTime);
-  $("div#verticalLine").fadeOut(fadeTime);
+  const fadeTime = 450;
+  const verticalLine = $("div#verticalLine");
+  verticalLine.fadeOut(fadeTime);
+  verticalLine.fadeIn(fadeTime);
+  verticalLine.fadeOut(fadeTime);
+  verticalLine.fadeIn(fadeTime);
+  verticalLine.fadeOut(fadeTime);
   setTimeout(simulateSelection, fadeTime*4);
 }
 
@@ -55,6 +55,7 @@ function simulateSelection(){
 }
 
 function simulateBold(){
-  $("p#secondTitle").css("background-color", "transparent");
-  $("p#secondTitle").css("font-weight", "bolder");
+  const secondTitle = $("p#secondTitle");
+  secondTitle.css("background-color", "transparent");
+  secondTitle.css("font-weight", "bolder");
 }
